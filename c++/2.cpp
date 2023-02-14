@@ -31,13 +31,13 @@ int main()
  side = t0 + a[0].x * t1 + a[0].y * t2 > 0;
  else
  side = t0 + b[0].x * t1 + b[0].y * t2 > 0;
- // 判定 A 点集合是否在同一侧
+ // 判定 A 点集合是否在同一侧。
  for(int i = 1; i < acnt; i++)
  if(t0 + a[i].x * t1 + a[i].y * t2 > 0 != side) {
  ans = false;
  break;
  }
- // 判定 B 点集合是否在同一侧
+ // 判定 B 点集合是否在同一侧。
  if(ans) {
  for(int i = 0; i < bcnt; i++)
  if(t0 + b[i].x * t1 + b[i].y * t2 > 0 == side) {
