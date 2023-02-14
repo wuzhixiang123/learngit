@@ -37,7 +37,7 @@ int main()
  ans = false;
  break;
  }
- // 判定 B 点集合是否在同一侧。
+ // 判定 B 点集合是否在同一侧。111
  if(ans) {
  for(int i = 0; i < bcnt; i++)
  if(t0 + b[i].x * t1 + b[i].y * t2 > 0 == side) {
