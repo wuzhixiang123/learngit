@@ -4,7 +4,7 @@ map<int, int> mp;
 int main()
 {
  int n,a,b,ix,val;
-    cin>>n>>a>>b;
+    cin>>n>>a>>b; //cin的输入并不是cin>>a,b,n.这样子使用会出错。
     for(int i = 0;i < a;i++){
         cin>>ix>>val;
         if(ix >= n){
@@ -17,6 +17,6 @@ int main()
         cin>>ix>>val;
         sum+=val*mp[ix];
     }
-    cout<<sum<<endl;
+    cout<<sum<<endl;//cout的最后这个单词是endl并不是end1；
     return 0;
 }
